@@ -3,6 +3,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Shopcontroller;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -25,4 +27,8 @@ Route::get('/shop/product/{id}',[Shopcontroller::Class,'show']);
 
 Route::get('/shop',[Shopcontroller::class,'shop']);
 
+Route::get('/login',[LoginController::class,'showLogin'])->name('layout.showlogin');
+Route::post('/login',[LoginController::class,'login'])->name('front.layout.login');
 
+Route::get('/register',[RegisterController::class,'showRegister'])->name('layout.showlegister');
+Route::post('/register',[RegisterController::class,'register'])->name('front.layout.register');
