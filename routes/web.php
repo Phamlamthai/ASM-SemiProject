@@ -30,5 +30,5 @@ Route::get('/shop',[Shopcontroller::class,'shop']);
 Route::get('/login',[LoginController::class,'showLogin'])->name('layout.showlogin');
 Route::post('/login',[LoginController::class,'login'])->name('front.layout.login');
 
-Route::get('/register',[RegisterController::class,'showRegister'])->name('layout.showlegister');
-Route::post('/register',[RegisterController::class,'register'])->name('front.layout.register');
+Route::get('/register',[RegisterController::class,'showRegister'])->name('showRegister');
+Route::post('/register',[RegisterController::class,'postRegister'])->name('register');

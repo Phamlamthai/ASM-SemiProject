@@ -15,7 +15,7 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function(BluePrint $table){
             $table->increments('user_id');
-            $table->string('user_name');
+            $table->string('user_name')->nullable();
             $table->string('email');
             $table->string('password');
             $table->string('avatar');

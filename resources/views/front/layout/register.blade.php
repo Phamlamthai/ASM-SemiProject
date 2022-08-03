@@ -27,29 +27,34 @@
             <div class="col-lg-6 offset-lg-3">
                 <div class="login-form">
                     <h2>Register</h2>
-                    <form action="{{route('front.layout.register')}}" method="POST">
+                    <form action="{{route('register')}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="group-input">
-                            <label for="username">Email
+                            <label for="username">Username
                             </label>
-                            <input type="text" id="username" >
+                            <input type="text" id="username" name="username">
+                        </div>
+                        <div class="group-input">
+                            <label for="email">Email
+                            </label>
+                            <input type="text" id="email" name="email">
                         </div>
                         <div class="group-input">
                             <label for="password">Password
                             </label>
-                            <input type="text" id="password" >
+                            <input type="password" id="password" >
                         </div>
                         <div class="group-input">
                             <label for="password">Confirm Password
                             </label>
-                            <input type="text" id="password">
+                            <input type="password" id="password">
                         </div>
                         <button type="submit" class="site-btn login-btn">
                             Register
                         </button>
                     </form>
                     <div class="switch-login">
-                        <a href="login.html" class="or-login">Return SingIn</a>
+                        <a href="./login" class="or-login">Return SingIn</a>
                     </div>
                 </div>
             </div>
