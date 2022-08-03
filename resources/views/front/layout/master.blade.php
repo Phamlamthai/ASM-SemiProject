@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div class="ht-right">
-                    <a href="login.html" class="login-panel"><i class="fa fa-user"></i>Login</a>
+                    <a href="./login" class="login-panel"><i class="fa fa-user"></i>Login</a>
                     <div class="lan-selector">
                         <select class="language-drop" name="Countries" id="countries" style="...">
                             <option value="yt" data-image="front/img/flag-1.jpg" data-imagecss="flag yt" data-title="English" >English</option>
@@ -181,8 +181,8 @@
                                 <li><a href="./shopping-cart.html">Shopping Cart</a></li>
                                 <li><a href="./check-out.html">Checkout</a></li>
                                 <li><a href="./faq.html">Faq</a></li>
-                                <li><a href="./register.html">Register</a></li>
-                                <li><a href="./login.html">Login</a></li>
+                                <li><a href="./register">Register</a></li>
+                                <li><a href="./login">Login</a></li>
                             </ul>
                         </li>
                     </ul>
